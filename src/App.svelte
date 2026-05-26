@@ -7,15 +7,12 @@
     tasks = [...tasks, { text: input, done: false }];
     input = "";
   }
-
   function deleteTask(index) {
     tasks = tasks.filter((_, i) => i !== index);
   }
 </script>
-
 <div class="todo-container">
   <h2>Att göra-lista</h2>
-
   <div class="input-group">
     <input
       bind:value={input}
